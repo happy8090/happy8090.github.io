@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllFriendLinkName" xml:space="preserve">
+    <value>更多鏈接</value>
+  </data>
+  <data name="AllNew" xml:space="preserve">
+    <value>更多新聞</value>
+  </data>
+  <data name="AllNotice" xml:space="preserve">
+    <value>更多公告</value>
+  </data>
+  <data name="AllProduct" xml:space="preserve">
+    <value>更多產品</value>
+  </data>
+  <data name="AplateLinkName" xml:space="preserve">
+    <value>申請鏈接</value>
+  </data>
+  <data name="ArticleAddTimeText" xml:space="preserve">
+    <value>發布日期：</value>
+  </data>
+  <data name="ArticleAuthorText" xml:space="preserve">
+    <value>發布者：</value>
+  </data>
+  <data name="BargainorState0" xml:space="preserve">
+    <value>未確認</value>
+  </data>
+  <data name="BargainorState1" xml:space="preserve">
+    <value>已確認到款</value>
+  </data>
+  <data name="BargainorState2" xml:space="preserve">
+    <value>已發貨</value>
+  </data>
+  <data name="BargainorState3" xml:space="preserve">
+    <value>已歸檔</value>
+  </data>
+  <data name="InvalidPageIndexErrorMessage" xml:space="preserve">
+    <value>頁索引值錯誤！</value>
+  </data>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>用戶登錄</value>
+  </data>
+  <data name="NoticeText" xml:space="preserve">
+    <value>更多公告</value>
+  </data>
+  <data name="PageIndexOutOfRangeErrorMessage" xml:space="preserve">
+    <value>頁索引超出範圍！</value>
+  </data>
+  <data name="PagerSubmitButtonText" xml:space="preserve">
+    <value>轉到</value>
+  </data>
+  <data name="PicClassNameText" xml:space="preserve">
+    <value>分類：</value>
+  </data>
+  <data name="PlealseLoginText" xml:space="preserve">
+    <value>你的操作或者所訪問的內容需要會員登錄！</value>
+  </data>
+  <data name="PurchaserState0" xml:space="preserve">
+    <value>未付款</value>
+  </data>
+  <data name="PurchaserState1" xml:space="preserve">
+    <value>已付款</value>
+  </data>
+  <data name="PurchaserState2" xml:space="preserve">
+    <value>已到貨</value>
+  </data>
+  <data name="SiteMapPathContentText" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="ThisPageName" xml:space="preserve">
+    <value>會員注冊</value>
+  </data>
+  <data name="TopPageName" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="VoteButton1" xml:space="preserve">
+    <value>已投票</value>
+  </data>
+  <data name="VoteButton2" xml:space="preserve">
+    <value>未投票</value>
+  </data>
+</root>

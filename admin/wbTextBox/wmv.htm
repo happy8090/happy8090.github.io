@@ -1,0 +1,48 @@
+<HTML>
+	<HEAD>
+		<TITLE>插入媒体文件</TITLE>
+		<META content="text/html; charset=gb2312" http-equiv="Content-Type">
+		<Link rel="stylesheet" type="text/css" href="pop.css">
+			<SCRIPT event="onclick" for="Ok" language="JavaScript">
+	var s=path.value
+	if (s.length<10 )
+	{
+		alert("Please input file url");
+	}else{
+		window.returnValue = path.value+"*"+width.value+"*"+height.value
+		window.close();
+	}
+			</SCRIPT>
+			<script>
+function IsDigit()
+{
+  return ((event.keyCode >= 48) && (event.keyCode <= 57));
+}
+			</script>
+	</HEAD>
+	<BODY bgcolor="menu">
+		<TABLE border="0" cellPadding="0" cellSpacing="10" align="center" style="PADDING-LEFT:10px">
+			<TBODY>
+				<TR>
+					<TD align="center" colSpan="2"><font class="title">插入媒体文件</font>
+						<hr width="100%">
+						扩展名： avi, wmv, asf, mov,mp3</TD>
+				</TR>
+				<TR>
+					<TD align="center" colSpan="2">文件地址：<INPUT id="path" size="20"></TD>
+				</TR>
+				<TR>
+					<TD align="center">宽度：<INPUT id="width" size="7" value="480" ONKEYPRESS="event.returnValue=IsDigit();"></TD>
+				</TR>
+				<TR>
+					<TD>
+						<p align="center">宽度：<INPUT id="height" size="7" value="360" ONKEYPRESS="event.returnValue=IsDigit();"></p>
+					</TD>
+				<TR>
+					<TD align="center" colSpan="2">
+						<BUTTON id="Ok" type="submit">确认</BUTTON>&nbsp; &nbsp;
+						<BUTTON onclick="window.close();" type="button">取消</BUTTON></TD>
+				</TR>
+			</TBODY></TABLE>
+	</BODY>
+</HTML>

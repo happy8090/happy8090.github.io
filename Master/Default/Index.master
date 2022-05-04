@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="UC" Namespace="ActionlessForm" Assembly="ActionlessForm" %>
+<%@ Register Src="~/Controls/LanguageMenu.ascx"TagPrefix="UC" TagName="LanguageMenu" %>
+<%@ Register Src="~/Controls/WebSiteInfo.ascx" TagPrefix="UC" TagName="WebsiteInfo" %>
+<%@ Register Src="~/Controls/NoticeModule.ascx" TagPrefix="UC" TagName="NoticeModule" %>
+<%@ Register Src="~/Controls/MemberLogin.ascx" TagPrefix="UC" TagName="MemberLogin" %>
+<%@ Register Src="~/Controls/VoteModule.ascx" TagPrefix="UC" TagName="VoteModule" %>
+<%@ Register Src="~/Controls/Menu.ascx" TagPrefix="UC" TagName="Menu" %>
+<%@ Register Src="~/Controls/ArticleModule.ascx" TagPrefix="UC" TagName="ArticleModule" %>
+<%@ Register Src="~/Controls/PicModule.ascx" TagPrefix="UC" TagName="PicModule" %>
+<%@ Register Src="~/Controls/ProductModule.ascx" TagPrefix="UC" TagName="ProductModule" %>
+<%@ Register Src="~/Controls/AllFriendLink.ascx" TagName="AllFriendLink" TagPrefix="UC" %>
+<%@ Register Src="~/Controls/OperatFriendLink.ascx" TagName="OperatFriendLink" TagPrefix="UC" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Page.DataBind();
+    }
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%# WangQi.ERP.WebsiteData.Website.GetHtmlValue("WebsiteTitle")%></title>
+    <meta name="description" content="<%#WangQi.ERP.WebsiteData .Website .GetHtmlValue("Description") %>">
+    <meta name="keywords" content="<%# WangQi.ERP.WebsiteData .Website .GetHtmlValue("KeyWords") %>">
+    <meta name="author" content="<%# WangQi.ERP.WebsiteData .Website .GetHtmlValue("WebsiteName") %>">
+    <link href="css/Controls.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" type="text/javascript" src="../../js/System.js"></script>
+    <script language ="javascript" type="text/javascript" src="../../js/WebResource1.js"></script>
+    <script language ="javascript" type="text/javascript" src="../../js/WebResource2.js"></script>
+</head>
+<body>
+    <UC:form id="form1" runat="server">
+         <h1>此页无模板，加载默认首页模板</h1>
+        <h2>语言链接：</h2><UC:LanguageMenu ID="LanguageMenu1" runat="server" />
+        <h2>顶部菜单</h2><UC:Menu ID="TopMenu1" runat="server" Location="top" />
+        <h2>主菜单</h2><UC:Menu ID="MainMenu1" runat="server" Location="main" />
+        <h2>底部菜单</h2><UC:Menu ID="Menu1" runat="server" Location="bottom"  />
+        <h2>网站标题：</h2><UC:WebsiteInfo ID="WebsiteTitle" runat="server" ShowName="WebsiteTitle" />
+        <h2>网站名称：</h2><UC:WebsiteInfo ID="WebsiteName" runat="server" ShowName="WebsiteName" />
+        <h2>关键字：</h2><UC:WebsiteInfo ID="KeyWords" runat="server" ShowName="KeyWords" />
+        <h2>描述：</h2><UC:WebsiteInfo ID="Description" runat="server" ShowName="Description" />
+        <h2>版权信息：</h2><UC:WebsiteInfo ID="CopyRight" runat="server" ShowName="CopyRight" />
+        <h2>新闻文章模块调用：</h2><UC:ArticleModule ID="ArticleModule1" runat="server" ClassId="7" DateTimeFormat="yy-MM-dd" RowNum="10" TitleLength="10"  />
+        <h2>图文展示模块调用：</h2><UC:PicModule ID="PicModule1" runat="server" ClassId="1"  RowNum="2" TitleLength="5" ShortContentLength="30" ColumnsNum="5" Height="126" Width="167" ShowClassName="false" ShowShortContent="true"  />
+        <h2>购物产品模块调用：</h2><UC:ProductModule ID="ProductModule1" runat="server" ClassId="1"  RowNum="2" TitleLength="5" ShortContentLength="20" ColumnsNum="7" Height="99" Width="99"  />
+        <h2>公告：</h2><UC:NoticeModule ID="NoticeModule1" runat="server" RowNum="12" TitleLength="5" />
+        <h2>用户登录：</h2><UC:MemberLogin ID="MemberLogin1" runat="server" />
+        <h2>投票：</h2><UC:VoteModule ID="VoteModule1" runat="server" VoteId="3" />
+    <h2>
+    友情链接<h2>
+    <UC:AllFriendLink ID="AllFriendLink1" runat="server" />
+    <UC:OperatFriendLink ID="OperatFriendLink1" runnat="server"/>
+    </UC:form>
+</body>
+</html>

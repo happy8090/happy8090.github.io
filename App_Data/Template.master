@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="UC" Namespace="ActionlessForm" Assembly="ActionlessForm" %>
+<%@ Register Src="~/Controls/MemberLogin.ascx" TagPrefix="UC" TagName="MemberLogin" %>
+<%@ Register Src="~/Controls/VoteModule.ascx" TagPrefix="UC" TagName="VoteModule" %>
+<%@ Register Src="~/Controls/WebSiteSearch.ascx" TagPrefix="UC" TagName="WebSiteSearch" %>
+<%@ Register Src="~/Controls/Search.ascx" TagPrefix="UC" TagName="Search" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Page.DataBind();
+    }
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="description" content="<%# WangQi.ERP.Web.BasePage.GetWebDescription() %>" />
+	<meta name="keywords" content="<%# WangQi.ERP.Web.BasePage.GetWebKeyWords() %>" />
+	<meta name="author" content="<%# WangQi.ERP.WebsiteData.Website.GetHtmlValue("WebsiteName") %>" />
+	$HeadContent$
+    <script language="JavaScript" type="text/javascript" src="/js/System.js"></script>
+</head>
+<body>
+    <UC:form id="form1" runat="server">
+$BodyContent$
+    </UC:form>
+</body>
+</html>

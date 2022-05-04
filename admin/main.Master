@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="WangQi.ERP.Web.admin.main" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Cwms后台管理系统</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+     <link href="wbTextBox/edit.css" rel="STYLESHEET" type="text/css" />
+    <script language="JavaScript" type="text/javascript" src="Js/Global.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Js/WebResource1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Js/WebResource2.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server" method="post" enctype="multipart/form-data">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="95" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" id="top">
+            <tr>
+              <td height="65" id="logoImgTd">
+			  <img src="style/Logo.gif" width="147" height="50" align="absmiddle" style="float:left" />
+                <div id="topLoginMessage">
+                  <asp:Label ID="UserNameMessage" runat="server" Text="您好！"></asp:Label>[
+                  <asp:HyperLink  ID="ChangePassWord" runat="server" NavigateUrl="~/admin/AdministratorsInfo.aspx">修改密码</asp:HyperLink>]&nbsp; 当前语言:
+                  <asp:Label ID="SiteLanguageStr" runat="server" ForeColor="Red"></asp:Label>
+                  [<a href="javascript:editLanguage()">修改</a>]
+                  <span id="siteLanguageList" class="hide">
+                      <asp:DropDownList ID="SiteLanguageList" runat="server" AutoPostBack="True"
+                                                      OnSelectedIndexChanged="SiteLanguageList_SelectedIndexChanged" > </asp:DropDownList>
+                  <a href="javascript:cancelEditLanguage()">取消</a>
+                  </span> 
+                </div></td>
+             </tr>
+            
+            <tr>
+              <td id="topMenu">
+			  <div style="float:left">
+			  	<ul>
+			  	    <li><a href="ChannelList.aspx">常用频道</a> </li>
+			  	    <li><a href="ChannelList.aspx?op=Hidden">稀用频道</a> </li>
+			  	    <li><a href="MemberList.aspx">人员管理</a> </li>
+			  	    <li><a href="LoginInfo.aspx">基本设置</a> </li>
+			  	    <li><a href="NoticeAdd.aspx">系统管理</a> </li>
+			  	    <li><a href="SiteAdAdd.aspx">广告幻灯</a> </li>
+					<%--<li><a href="WebInfo.aspx">系统管理</a> </li>
+					<li><a href="ChannelAdd.aspx">频道管理</a></li>
+					<li><a href="AdministratorsInfo.aspx">系统安全</a></li>--%>
+					<%--<li><a href="ChannelAdd.aspx?op=Hidden">隐藏频道</a></li>--%>
+				</ul>
+				</div>
+				<div class="exit">
+				<asp:LinkButton ID="LoginOut" runat="server" OnClick="LoginOut_Click" CausesValidation="False">退出系统</asp:LinkButton>
+				</div>
+				</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td valign="top"  id="left" ><asp:ContentPlaceHolder ID="LeftMenu" runat="server">
+              </asp:ContentPlaceHolder>              </td>
+              <td valign="top"><asp:ContentPlaceHolder ID="MidContent" runat="server">
+
+                  </asp:ContentPlaceHolder>              </td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td id="boot" >
+              <asp:Label ID="CopyRight" runat="server" Text=' '></asp:Label></td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>

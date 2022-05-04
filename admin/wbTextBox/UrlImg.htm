@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+        <meta content="text/html; charset=gb2312" http-equiv="content-type" />
+        <title></title>
+
+		<Link rel="stylesheet" type="text/css" href="pop.css">
+			<script language="javascript">
+			function Submit()
+			{
+				var objTitle=document.getElementById("image");
+				var s=objTitle.value;
+				if (s.length<10)
+				{
+					alert("请输入图片地址!");
+					return false;
+				}else
+				{
+					window.returnValue =s;
+					window.close();
+				}
+			}
+			</script>
+	</head>
+	<body>
+		<form>
+			<table style="PADDING-LEFT: 10px" cellSpacing="10" cellPadding="0" align="center" border="0"
+				ID="Table1">
+				<tr>
+					<td align="center" colSpan="2"><font style="FONT-SIZE: 12pt">URL图片</font>
+						<hr width="100%">
+						图片地址：<INPUT id="image" type="text" name="image" value="http://">
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colSpan="2">
+					<BUTTON id="btnOk" type="button" onclick="return Submit()" name="btnOk">确定</BUTTON>
+					&nbsp;<BUTTON onclick="window.returnValue ='';window.close();" type="button" ID="Button1">取消</BUTTON>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

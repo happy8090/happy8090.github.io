@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NoticeModule.ascx.cs" Inherits="WangQi.ERP.Web.Controls.NoticeModule" %>
+<asp:Literal ID="NoticeBox" runat="server"  EnableViewState="False"></asp:Literal>

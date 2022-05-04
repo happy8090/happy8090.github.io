@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Doc>
+  <!--/////语言列表/////
+    value 为优先级，由小到大排序
+    text 版本名称
+    Culture Culture值
+  -->
+  <LanguageList>
+    <Text>中文</Text>
+    <Value>1</Value>
+    <Culture>zh-CN</Culture>
+  </LanguageList>
+  <LanguageList>
+    <Text>English</Text>
+    <Value>2</Value>
+    <Culture>en</Culture>
+  </LanguageList>
+  <!--不同语言站点信息-->
+  <Info>
+    <Language>1</Language>
+    <WebsiteName>网奇Cwms企业网站管理系统</WebsiteName>
+    <WebsiteTitle>网奇Cwms企业网站管理系统</WebsiteTitle>
+    <WebsiteUrl>http://www.wqcwms.com</WebsiteUrl>
+    <WebsiteBottm>&lt;p&gt;电话：0335-3228867 传真：0335-3228867-15 售前QQ：97653323&amp;nbsp; 97653324&amp;nbsp; 97653327&amp;nbsp; 97653328&amp;nbsp; （商务合作）&lt;br /&gt;
+MSN：&lt;a href="mailto:Qiwang@188.com"&gt;Qiwang@188.com&lt;/a&gt; Email：&lt;a href="mailto:Qiwang@188.com"&gt;Qiwang@188.com&lt;/a&gt;&lt;br /&gt;
+Copyright 秦皇岛网奇网络科技有限公司 冀ICP备 05008592号&lt;/p&gt;</WebsiteBottm>
+    <KeyWords>模版</KeyWords>
+    <Description>做网站,找网奇</Description>
+    <WebsiteLogo>&lt;p&gt;&lt;img height="65" alt="" width="198" src="/admin/Upload/logo.gif" /&gt;&lt;/p&gt;</WebsiteLogo>
+  </Info>
+  <Info>
+    <Language>2</Language>
+    <WebsiteName>WangQi CWMS</WebsiteName>
+    <WebsiteTitle>WangQi CWMS</WebsiteTitle>
+    <WebsiteUrl>http://www.wqcwms.com</WebsiteUrl>
+    <WebsiteBottm>&lt;p&gt;Tel：0335-7668688 Fax：0335-7668688-15 QQ：228918804 228918810 228918812 28918857&lt;br /&gt;
+MSN：Qiwang@188.com Email：Qiwang@188.com&lt;br /&gt;
+Copyright &amp;copy; 2008-2010&amp;nbsp;&amp;nbsp; &lt;a target="_blank" href="http://www.wangqi.com/"&gt;Wangqi&lt;/a&gt; &lt;span&gt;Inc.&lt;/span&gt; ICP:05008592&lt;/p&gt;</WebsiteBottm>
+    <KeyWords> CWMS</KeyWords>
+    <Description>CWMS</Description>
+    <WebsiteLogo>&lt;p&gt;&lt;img style="width: 183px; height: 72px" alt="" src="/admin/Upload/logo.jpg" /&gt;&lt;/p&gt;</WebsiteLogo>
+  </Info>
+</Doc>

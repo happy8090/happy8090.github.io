@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="UC" Namespace="ActionlessForm" Assembly="ActionlessForm" %>
+<%@ Register Src="~/Controls/MemberLogin.ascx" TagPrefix="UC" TagName="MemberLogin" %>
+<%@ Register Src="~/Controls/VoteModule.ascx" TagPrefix="UC" TagName="VoteModule" %>
+<%@ Register Src="~/Controls/WebSiteSearch.ascx" TagPrefix="UC" TagName="WebSiteSearch" %>
+<%@ Register Src="~/Controls/Search.ascx" TagPrefix="UC" TagName="Search" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Page.DataBind();
+    }
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="description" content="<%# WangQi.ERP.Web.BasePage.GetWebDescription() %>" />
+	<meta name="keywords" content="<%# WangQi.ERP.Web.BasePage.GetWebKeyWords() %>" />
+	<meta name="author" content="<%# WangQi.ERP.WebsiteData.Website.GetHtmlValue("WebsiteName") %>" />
+	<link rel="stylesheet" type="text/css" href="style/default.css" />
+<script src="/js/Switching.js" type="text/javascript"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/System.js"></script>
+</head>
+<body>
+    <UC:form id="form1" runat="server">
+<div class="twidth">
+
+        <div id="headtop">
+        
+        <div class="l"><span style="float:left;">Time：</span>
+                <script type="text/javascript" src="/js/SystemTime.js" charset="gb2312"> </script>
+                <span id="time" YearMonth="true" YMFormate="-" week="true" hour="true" SiteLanguage=<%=WangQi.ERP.WebsiteData.Website.GetLanguage()%>></span>
+                <script type="text/javascript"> showtime();</script>
+            </div>
+            <div class="r">
+            <%=WangQi.ERP.Web.BasePage.GetTopUserOfCompany()%>
+            <a href="/websearch.aspx">Search</a>
+            |
+            <a href="/sitemap.aspx">SiteMap</a>
+            |
+            <%=WangQi.ERP.Web.BasePage.GetLanguageMenu() %>
+                        <script language ="javascript" type="text/javascript" src="/js/language.js" charset="gb2312"></script>
+
+            </div>
+
+        </div>
+    <div id="header">
+            <div class="topAd">		
+<!-----开始------->
+    <script type="text/javascript">
+        function SearchResult()
+        {
+           var now = new Date();
+           var NowStr=now.getYear()+"-"+(now.getMonth()+1)+"-"+now.getDate();
+           var nextNow=new Date();
+           nextNow.setDate(nextNow.getDate()+1);
+           var NewStr=nextNow.getYear()+"-"+(nextNow.getMonth()+1)+"-"+nextNow.getDate();
+           var Ary=document.getElementsByName("Rad");
+           var SearchType="";
+           for(var i=0;i<Ary.length;i++)
+           {
+              if(Ary[i].checked)
+              {
+                 SearchType=Ary[i].value;
+              }
+           }
+           //location.href="SuperSearch.aspx?keyWord="+document.getElementById("KeyValue").value+"&searchType="+SearchType+"&category=news&dates="+NowStr+"&datet="+NewStr;
+           location.href="SuperSearch.aspx?keyWord="+document.getElementById("KeyValue").value.replace(/(^\s*)|(\s*$)/g,"")+"&searchType="+SearchType;
+        }
+    </script>
+    <input type="text" name="KeyValue" id="KeyValue" class="inputbg" /> <input type="radio" name="Rad" value="title" id="Rad0" checked="checked" />Title<input type="radio" name="Rad" value="author" id="Rad1" />Author<input type="radio" name="Rad" value="source" id="Rad2" />Source&nbsp;&nbsp;&nbsp;<input type="button" value="Search" onclick="javascript:SearchResult();" class="btn" />
+    <!-----结束------->	</div>
+
+                <div id="logo"><%=WangQi.ERP.Web.BasePage.GetWebSiteLogo() %></div>
+
+            
+
+    </div>
+    <!--header over-->
+    <!--menu-->
+    <div id="nav">
+        <div class="l"></div>
+        <div class="r"></div>
+        <div class="m"><%=WangQi.ERP.Web.BasePage.GetMenu("main") %></div>
+    </div>
+
+
+    <div class="height7"></div>
+    <!--mainWrapper-->
+    <div id="middle">
+        
+        <div class="conL">
+            <div class="contL">
+                <div class="login">
+                    <UC:MemberLogin ID="MemberLogin1" IsCode="true" IsReg="true" IsLostPwd="true" Type="1" runat="server" />
+                </div>
+                <div class="pic">
+                    <div class="tm">
+                        <span class="tt">Picture</span>
+                    </div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetPicToPicModule(25,3,1,14, 0, false, false , "yyyy/MM/dd", "","1","120","90")%>
+                        <div class="height0"></div>
+                    </div>
+                </div>
+                <div class="link"><br />
+                    <br />
+                    <br />
+                    <script type="text/javascript" src="js/Friendlinks.js"></script>
+                    <div id="oRollV" style="overflow:hidden;height:80px;margin:5px;" class="friendlink">
+                        <div id="oRollV1"> <%=WangQi.ERP.Web.BasePage.GetLinks("11","","120","50")%> </div>
+                        <div id="oRollV2"> </div>
+                    </div>
+                    <script type="text/javascript" src="">window.setTimeout("StartRollV();StartRollH();",1500);</script>
+                    <%=WangQi.ERP.Web.BasePage.GetOperatFriendLink() %> </div>
+            </div>
+            <div class="contR">
+                <div class="mframe" style=" height:211px;">
+                    <div class="tm2"></div>
+                    <div class="mm" style="padding:10px 0">
+                        <div style="float:left; width:245px">
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id=scriptmain name=scriptmain codebase="http://download.macromedia.com/pub/shockwave/cabs/
+flash/swflash.cab#version=6,0,29,0" width="245" height="158">
+                                <param name="movie" value="admin/WebPic/bcastr.swf?bcastr_xml_url=admin/WebPic/xml/bcastr.xml">
+                                <param name="quality" value="high">
+                                <param name=scale value=noscale>
+                                <param name="LOOP" value="false">
+                                <param name="menu" value="false">
+                                <param name="wmode" value="transparent">
+                                <embed src="admin/WebPic/bcastr.swf?bcastr_xml_url=admin/WebPic/xml/bcastr.xml" width="245" height="158" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" salign="T" name="scriptmain" menu="false" wmode="transparent"></embed>
+                            </object>
+                        </div>
+                       <div style="float:right; width:270px; font-size:14px;">  <%=WangQi.ERP.Web.BasePage.GetHotNewsModule(-1, 7, 15, false, false,true,"yy-MM-dd", "year")%> </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tm"> <a class="more" href='<%=WangQi.ERP.Web.BasePage.GetMoreUrl("News","31") %>'></a>
+                        <span class="tt">Work Trend</span>
+                    </div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetArticleModule(31, 7, 14, false, false,true, "yy-MM-dd")%> </div>
+                </div>
+                <div class="box" style=" margin-left:11px;">
+                    <div class="tm"> <a class="more" href='<%=WangQi.ERP.Web.BasePage.GetMoreUrl("News","31") %>'></a>
+                        <span class="tt">Work Trend</span>
+                    </div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetArticleModule(31, 7, 14, false, false,true, "yy-MM-dd")%> </div>
+                </div>
+                <div class="box">
+                    <div class="tm"> <a class="more" href='<%=WangQi.ERP.Web.BasePage.GetMoreUrl("News","31") %>'></a>
+                        <span class="tt">Work Trend</span>
+                    </div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetArticleModule(31, 7, 14, false, false,true, "yy-MM-dd")%> </div>
+                </div>
+                <div class="box" style=" margin-left:11px;">
+                    <div class="tm"> <a class="more" href='<%=WangQi.ERP.Web.BasePage.GetMoreUrl("News","31") %>'></a>
+                        <span class="tt">Work Trend</span>
+                    </div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetArticleModule(31, 7, 14, false, false,true, "yy-MM-dd")%> </div>
+                </div>
+                <div class="height0"></div>
+                <div class="mframe" style="height:190px;">
+                    <div class="tm3"></div>
+                    <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetSinglePage("48","Content","Big")%> </div>
+                </div>
+            </div>
+        </div>
+        <div class="conR">
+            <div class="lframe">
+                <div class="tm">
+                    <span class="tt">Bulletin</span>
+                </div>
+                <div class="mm">
+                    <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3" scrolldelay="4" height="125px">
+                    <%=WangQi.ERP.Web.BasePage.GetNoticeModule(1, 50, "yyyy/MM/dd")%>
+                    </marquee>
+                </div>
+                <div class="bm"></div>
+            </div>
+            <div class="lframe">
+                <div class="tm">
+                    <span class="tt">Navigation</span>
+                </div>
+                <div class="mm2">
+                    <ul>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                        <li><a href="#">Columns</a></li>
+                    </ul>
+                </div>
+                <div class="bm"></div>
+            </div>
+            <div class="vote">
+                <div class="tm"></div>
+                <div class="mm">
+                    <UC:VoteModule ID="VoteModule1" VoteId="2"  runat="server" />
+                </div>
+                <div class="bm"></div>
+            </div>
+        </div>
+    </div>
+<div id="footer"> <%=WangQi.ERP.Web.BasePage.GetMenu("bottom")%> <%=WangQi.ERP.Web.BasePage.GetWebsiteInfo("CopyRight")%> </div>
+</div>
+</div>
+    </UC:form>
+</body>
+</html>

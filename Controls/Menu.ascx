@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Menu.ascx.cs" Inherits="WangQi.ERP.Web.Controls.Menu" %>
+<asp:Literal ID="MenuList" runat="server" EnableViewState="False"></asp:Literal><br />

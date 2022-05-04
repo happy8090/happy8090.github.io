@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LanguageMenu.ascx.cs" Inherits="WangQi.ERP.Web.Controls.LanguageMenu" %>
+<asp:Literal ID="LanguageList" runat="server" Text="" EnableViewState="False"></asp:Literal>

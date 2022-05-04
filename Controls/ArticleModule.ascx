@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ArticleModule.ascx.cs" Inherits="WangQi.ERP.Web.Controls.ArticleModule" %>
+<asp:Literal ID="ArticleList" runat="server" Text="" EnableViewState="false"></asp:Literal>

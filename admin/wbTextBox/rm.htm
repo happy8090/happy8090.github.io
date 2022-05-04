@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta content="text/html; charset=gb2312" http-equiv="content-type" />
+    <title>Untitled Page</title>
+    <Link rel="stylesheet" type="text/css" href="pop.css">
+			<script event="onclick" for="Ok" language="JavaScript">
+	            var s=path.value;
+	            if (s.length<10)
+	            {
+		            alert("请输入real文件的地址");
+	            }else{
+		            window.returnValue = path.value+"*"+selrow.value+"*"+selcol.value
+		            window.close();
+	            }
+			</script>
+			<script>
+                    function IsDigit()
+                    {
+                      return ((event.keyCode >= 48) && (event.keyCode <= 57));
+                    }
+			</script>
+</head>
+<body >
+<TABLE border="0" cellPadding="0" cellSpacing="10" align="center" style="PADDING-LEFT:10px">
+			<TBODY>
+				<TR>
+					<TD align="center" colSpan="2">
+						插入real媒体文件
+						<hr width="100%">
+						扩展名：rm, ra, ram,mp3</TD>
+				</TR>
+				<TR>
+					<TD align="center" colSpan="2">
+						地址: <INPUT id="path" size="25">
+					</TD>
+				</TR>
+				<TR>
+					<TD align="center">宽度 : &nbsp; &nbsp; <INPUT id="selrow" size="7" value="480" ONKEYPRESS="event.returnValue=IsDigit();"></TD>
+				</TR>
+				<TR>
+					<TD>
+						<p align="center">高度 : &nbsp; &nbsp; <INPUT id="selcol" size="7" value="360" ONKEYPRESS="event.returnValue=IsDigit();"></p>
+					</TD>
+				<TR>
+					<TD align="center" colSpan="2" style="height: 20px">
+					<BUTTON id="Ok" type="submit">确定</BUTTON>&nbsp;
+					<BUTTON onclick="window.close();" type="button">取消</BUTTON></TD>
+				</TR>
+			</TBODY></TABLE>
+		<script>
+		</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+.hide
+{
+    display: none;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+body ,body td{
+	font-size: 12px;
+}
+ul,li,p{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.orderTtitle{
+	font-size: 12px;
+	line-height: 29px;
+	font-weight: bolder;
+	color: #666666;
+	background-image: url(../images/CartTitleBg.jpg);
+	background-repeat: repeat-x;
+	height: 29px;
+	text-indent: 15px;
+}
+.loginPanel{
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.goodsListBox{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.goodsList{
+	border: 1px solid #D7D7D7;
+}
+.goodsList a{
+	color:#3F6293;
+}
+.header{
+	color: #3F6293;
+	background-color: #F7F7F7;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: normal;
+	font-variant: normal;
+}
+.header th{
+	font-weight: normal;
+	font-variant: normal;
+}
+.row,.alternatingRow{
+	line-height: 20px;
+	text-align: center;
+	padding: 2px;
+	height: 20px;
+}
+.alternatingRow{
+	background-color: #F5FBFF;
+}
+.goodsNum{
+	color: #3F6293;
+	border: 1px solid #CAD1DD;
+	background-color: #FFFFFF;
+	width: 40px;
+	vertical-align: middle;
+}
+.goodsBt{
+	line-height: 20px;
+	color: #666666;
+	background-image: url(../images/CartRowBtBg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+	width: 45px;
+	background-color: #FFFFFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.btBox{
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding: 0px;
+	text-align: left;
+}
+.orderTableBox{
+}
+.orderTable{
+	border: 1px solid #D7D7D7;
+	border-collapse:collapse;
+}
+.orderTable td{
+}
+.orderTable tr{
+	line-height: 20px;
+	padding: 2px;
+	height: 20px;
+}
+.orderTdTitle{
+	color: #3F6293;
+	background-color: #F7F7F7;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	font-weight: normal;
+	font-variant: normal;
+	text-indent: 20px;
+}
+.leftTd{
+	text-align: right;
+}
+.rightTd{
+}
+.rightTd input ,.rightTd textarea{
+	color: #3F6293;
+	border: 1px solid #CAD1DD;
+	background-color: #FFFFFF;
+	width: 140px;
+	vertical-align: middle;
+}
+.rightTd .consigneeAddress{
+	width: 200px;
+}
+.explain{
+	color: #999999;
+}
+ul li{
+	margin-bottom: 8px;
+}
+.requiredLabel{
+}
+.deliveryRepeater{
+}
+.deliveryRepeater ul{
+}
+.deliveryRepeater ul li{
+}
+.deliveryRadioButton{
+	font-weight: bold;
+}
+.deliveryMoneyLabel{
+	color: #333333;
+	display: inline;
+	padding-left: 5px;
+}
+.deliveryContent ,.paymentContent{
+	padding-left: 23px;
+	line-height: 140%;
+	padding-top: 3px;
+}
+.paymentRepeater{
+}
+.priceBox{
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 10px;
+}
+.deliveryMoney{
+	color: #FF0000;
+}
+.deliveryMoneyLabel{
+}
+.grossLabel{
+	display: inline;
+	padding-left: 10px;
+}
+.gross{
+	color: #FF0000;
+}
+.priceBox input{
+	line-height: 23px;
+	color: #000000;
+	background-color: #FFFFFF;
+	background-image: url(../images/CartBtBg.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+	text-indent: 19px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 23px;
+	width: 80px;
+	margin-left: 20px;
+}
+.orderSendPanel{
+}
+.sendMsgBox{
+}
+.closeButtonBox{
+}
+
+
+

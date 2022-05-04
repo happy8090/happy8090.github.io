@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllFriendLinkName" xml:space="preserve">
+    <value>更多链接</value>
+  </data>
+  <data name="AllFriendLinkUrl" xml:space="preserve">
+    <value>网站名称</value>
+  </data>
+  <data name="AllNew" xml:space="preserve">
+    <value>更多新闻</value>
+  </data>
+  <data name="AllNotice" xml:space="preserve">
+    <value>更多公告</value>
+  </data>
+  <data name="AllProduct" xml:space="preserve">
+    <value>更多产品</value>
+  </data>
+  <data name="AplateLinkName" xml:space="preserve">
+    <value>申请链接</value>
+  </data>
+  <data name="ArticleAddTimeText" xml:space="preserve">
+    <value>发布日期：</value>
+  </data>
+  <data name="ArticleAuthorText" xml:space="preserve">
+    <value>发布者：</value>
+  </data>
+  <data name="BargainorState0" xml:space="preserve">
+    <value>未确认</value>
+  </data>
+  <data name="BargainorState1" xml:space="preserve">
+    <value>已确认到款</value>
+  </data>
+  <data name="BargainorState2" xml:space="preserve">
+    <value>已发货</value>
+  </data>
+  <data name="BargainorState3" xml:space="preserve">
+    <value>已归档</value>
+  </data>
+  <data name="BasePageBuy" xml:space="preserve">
+    <value>购买</value>
+  </data>
+  <data name="BasePageBuyList" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="BasePagehlApplate" xml:space="preserve">
+    <value>申请链接</value>
+  </data>
+  <data name="BasePagehtMore" xml:space="preserve">
+    <value>更多链接</value>
+  </data>
+  <data name="BasePageProductNum" xml:space="preserve">
+    <value>编号：</value>
+  </data>
+  <data name="BasePageProductPrice" xml:space="preserve">
+    <value>价格：￥</value>
+  </data>
+  <data name="CompanyEr" xml:space="preserve">
+    <value>人员考勤</value>
+  </data>
+  <data name="DeliveryTip" xml:space="preserve">
+    <value>未选运送方式！</value>
+  </data>
+  <data name="DownloadName" xml:space="preserve">
+    <value>附件：</value>
+  </data>
+  <data name="FirstPageText" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="InvalidPageIndexErrorMessage" xml:space="preserve">
+    <value>页索引值无效！</value>
+    <comment>分页导航错误提示</comment>
+  </data>
+  <data name="LastPageText" xml:space="preserve">
+    <value>尾页</value>
+  </data>
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>用户登陆</value>
+  </data>
+  <data name="MembersReg" xml:space="preserve">
+    <value>会员注册</value>
+  </data>
+  <data name="MembersRegs" xml:space="preserve">
+    <value>会员注册</value>
+  </data>
+  <data name="MsgAdd" xml:space="preserve">
+    <value>添加成功！</value>
+  </data>
+  <data name="NewsDetail" xml:space="preserve">
+    <value>阅读新闻</value>
+  </data>
+  <data name="NextPageText" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="NoticeText" xml:space="preserve">
+    <value>更多公告</value>
+  </data>
+  <data name="PageIndexOutOfRangeErrorMessage" xml:space="preserve">
+    <value>页索引超出范围！</value>
+    <comment>分页导航错误提示</comment>
+  </data>
+  <data name="PagerSubmitButtonText" xml:space="preserve">
+    <value>转到</value>
+    <comment>分页导航提交按钮</comment>
+  </data>
+  <data name="PaymentTip" xml:space="preserve">
+    <value>未选支付方式！</value>
+  </data>
+  <data name="PicClassNameText" xml:space="preserve">
+    <value>分类：</value>
+  </data>
+  <data name="PicDetail" xml:space="preserve">
+    <value>图文展示</value>
+  </data>
+  <data name="PlealseLoginText" xml:space="preserve">
+    <value>您的操作或所访问的内容需要会员登陆</value>
+  </data>
+  <data name="PrevPageText" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="ProductDetail" xml:space="preserve">
+    <value>详细介绍</value>
+  </data>
+  <data name="PurchaserState0" xml:space="preserve">
+    <value>未付款</value>
+    <comment>订单购买者状态</comment>
+  </data>
+  <data name="PurchaserState1" xml:space="preserve">
+    <value>已付款</value>
+    <comment>订单购买者状态</comment>
+  </data>
+  <data name="PurchaserState2" xml:space="preserve">
+    <value>已到货</value>
+    <comment>订单购买者状态</comment>
+  </data>
+  <data name="RegisterTxt" xml:space="preserve">
+    <value>我接受协议</value>
+  </data>
+  <data name="RegisterView" xml:space="preserve">
+    <value>查看协议</value>
+  </data>
+  <data name="ShowVoteResultTitle" xml:space="preserve">
+    <value>查看结果</value>
+  </data>
+  <data name="SiteMapPathContentText" xml:space="preserve">
+    <value>内容</value>
+    <comment>详细页位置导航例： 首页&gt;软件资讯&gt;SiteMapPathContentText(内容)</comment>
+  </data>
+  <data name="SiteMapTitle" xml:space="preserve">
+    <value>网站地图</value>
+  </data>
+  <data name="SuperSearch" xml:space="preserve">
+    <value>搜索结果如下:</value>
+  </data>
+  <data name="SuperSearchTitle" xml:space="preserve">
+    <value>搜索结果</value>
+  </data>
+  <data name="TemNext" xml:space="preserve">
+    <value>下一篇：</value>
+  </data>
+  <data name="TemPrev" xml:space="preserve">
+    <value>上一篇：</value>
+  </data>
+  <data name="ThisPageName" xml:space="preserve">
+    <value>会员注册</value>
+  </data>
+  <data name="TopPageName" xml:space="preserve">
+    <value>首页  </value>
+  </data>
+  <data name="TxtAuthor" xml:space="preserve">
+    <value>作者：</value>
+  </data>
+  <data name="TxtSource" xml:space="preserve">
+    <value>来源：</value>
+  </data>
+  <data name="Vote" xml:space="preserve">
+    <value>票</value>
+  </data>
+  <data name="VoteButton1" xml:space="preserve">
+    <value>已投票</value>
+  </data>
+  <data name="VoteButton2" xml:space="preserve">
+    <value>未投票</value>
+  </data>
+</root>

@@ -1,0 +1,127 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+body ,body td{
+	font-size: 12px;
+}
+.cartTtitle{
+	font-size: 12px;
+	line-height: 29px;
+	font-weight: bolder;
+	color: #666666;
+	background-image: url(../images/CartTitleBg.jpg);
+	background-repeat: repeat-x;
+	height: 29px;
+	text-indent: 15px;
+}
+.goodsListBox{
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.goodsList{
+	border: 1px solid #D7D7D7;
+}
+.goodsList a{
+	color:#3F6293;
+}
+.header{
+	color: #3F6293;
+	background-color: #F7F7F7;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: normal;
+	font-variant: normal;
+}
+.header th{
+	font-weight: normal;
+	font-variant: normal;
+}
+.pager{
+}
+.row,.alternatingRow{
+	line-height: 20px;
+	text-align: center;
+	padding: 2px;
+	height: 20px;
+}
+.alternatingRow{
+	background-color: #F5FBFF;
+}
+.goodsNum{
+	color: #3F6293;
+	border: 1px solid #CAD1DD;
+	background-color: #FFFFFF;
+	width: 40px;
+	vertical-align: middle;
+}
+.goodsBt{
+	line-height: 20px;
+	color: #666666;
+	background-image: url(../images/CartRowBtBg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+	width: 45px;
+	background-color: #FFFFFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.btBox{
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding: 0px;
+	text-align: right;
+}
+.btBox input{
+	line-height: 23px;
+	color: #000000;
+	background-color: #FFFFFF;
+	background-image: url(../images/CartBtBg.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+	text-indent: 19px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 23px;
+	width: 80px;
+	margin-left: 10px;
+}
+.gross{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

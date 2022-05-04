@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Doc>
+  <!--不同语言会员注册协议-->
+  <Regist>
+    <Language>1</Language>
+    <AgreementContent>&lt;p&gt;你同意不利用本站宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、侵犯他人隐私、性别歧视和其他违反法律的内容；&lt;br /&gt;
+你也同意不发表任何版权不属于自己的内容.对自己的言论和行为负责。&lt;br /&gt;
+您将承担一切因您的行为而直接或间接导致的民事或刑事法律责任&lt;/p&gt;</AgreementContent>
+  </Regist>
+  <Regist>
+    <Language>2</Language>
+    <AgreementContent>&lt;P&gt;english&lt;/P&gt;</AgreementContent>
+  </Regist>
+</Doc>

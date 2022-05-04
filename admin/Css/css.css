@@ -1,0 +1,434 @@
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+}
+ul,li,form{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #3F6293;
+}
+a:hover{
+	text-decoration: underline;
+}
+.kuang{
+	border: 1px solid #000000;
+}
+input,textarea{
+	color: #3F6293;
+	background-color: #FBFBFB;
+	border: 1px solid #CAD1DD;
+}
+.link{
+	color:#000000;
+}
+.inputBt,.gvBtAField a,.gvBtAField a:hover{
+	color: #000000;
+	background-image: url(../Images/inputBt.jpg);
+	background-repeat: no-repeat;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-indent: 20px;
+	height: 23px;
+	width: 80px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 23px;
+	text-align: left;
+}
+.gvBtAField a,.gvBtAField a:hover{
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+.inputBt6{
+	color: #000000;
+	background-image: url(../Images/inputBt100.jpg);
+	background-repeat: no-repeat;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	text-indent: 20px;
+	height: 23px;
+	width: 100px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 23px;
+	text-align: left;
+}
+#top{
+	background-color: #E6F5FF;
+	color: #3F6293;
+}
+#logoImgTd{
+	
+}
+#topLoginMessage{
+	float: left;
+	padding-top: 45px;
+	padding-left: 10px;
+}
+#topLoginMessage a{
+	color: #000000;
+}
+#siteLanguageList{
+	
+}
+#topHelp {
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+#topMenu {
+	background-image: url(../Images/MenuBg.jpg);
+	background-repeat: repeat-x;
+	padding-left: 55px;
+}
+#topMenu li{
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	width: 100px;
+	background-image: url(../Images/MenuLiBg.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#topMenu li a{
+	font-size: 14px;
+	width: 100%;
+	font-weight: bolder;
+	color: #3F6293;
+	display: block;
+}
+#topMenu li a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../Images/menuABg.jpg);
+	display: block;
+	background-position: left top;
+}
+#topMenu .thisPage,#topMenu .thisPage a,#topMenu .thisPage a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+	background-image: url(../Images/menuABg1.jpg);
+	display: block;
+	background-position: left top;
+	cursor: default;
+}
+#left {
+	width: 190px;
+	color: #333333;
+	background-color: #F6F9FD;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #9DB3C5;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	min-height:442px;
+	height:expression(this.scrollHeight > 442 ? "auto":"442px"); 
+}
+.leftMenuTitle {
+	background-image: url(../Images/leftMenuTitleBg.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 25px;
+	padding-left: 35px;
+}
+.leftMenu {
+	margin-bottom: 10px;
+}
+.leftMenu li {
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-image: url(../Images/leftMenuLiBg1.jpg);
+	padding-top: 5px;
+}
+.leftMenu li a{
+	color: #666666;
+	text-indent: 45px;
+	display: block;
+	background-image: url(../Images/leftMenuLiBg1.jpg);
+	line-height: 25px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 25px;
+}
+.leftMenu li a:hover {
+	background-image: url(../Images/leftMenuLiBg.jpg);
+	text-decoration: none;
+	color: #333333;
+	line-height: 25px;
+}
+.leftMenu .thisPage,.leftMenu .thisPage a,.leftMenu .thisPage a:hover {
+	background-image: url(../Images/leftMenuLiBg.jpg);
+	text-decoration: none;
+	color: #333333;
+	cursor: default;
+}
+#mainMenu {
+	background-image: url(../Images/mainMenuBg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 30px;
+}
+#mainMenu ul{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+#mainMenu li {
+	float: left;
+	margin-right: 10px;
+	height: 25px;
+	background-image: url(../Images/mainMenuA1.jpg);
+	background-repeat: no-repeat;
+}
+#mainMenu a {
+	display: block;
+	width: 80px;
+	text-align: center;
+	background-image: url(../Images/mainMenuA1.jpg);
+	background-repeat: no-repeat;
+	color: #666666;
+	padding-top: 5px;
+	line-height: 20px;
+}
+
+#mainMenu a:hover {
+	display: block;
+	width: 80px;
+	text-align: center;
+	background-image: url(../Images/mainMenuA2.jpg);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #333333;
+}
+#mainMenu .thisPage a,#mainMenu .thisPage a:hover,#mainMenu .thisPage {
+	background-image: url(../Images/mainMenuA2.jpg);
+	color: #333333;
+	cursor: default;
+}
+#main {
+	padding: 8px;
+}
+#main p{
+	line-height: 120%;
+	padding: 0px;
+	margin: 0px;
+}
+#main .deliveryName,#main .paymentName{
+	font-weight: bold;
+}
+#main .deliveryContent,#main .paymentContent{
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#main .regularExpression{
+	width: 80px;
+}
+#main .deliveryMoneyLabel{
+	color: #333333;
+}
+#main .deliveryMoney{
+	color: #FF0000;
+}
+#mainTopTable{
+	margin-bottom: 8px;
+}
+#mainTopTable .inputBt6{
+	margin-right: 10px;
+}
+#mainBottTable{
+	margin-top: 8px;
+}
+#mainBottTable .inputText{
+	width: 100px;
+}
+#main td{
+	height:20px;
+}
+.mainTitle {
+	color: #3F6293;
+	background-color: #F7F7F7;
+	text-indent: 15px;
+	height: 20px;
+	line-height: 20px;
+}
+.explain{
+	color: #999999;
+}
+.mainLeftTd{
+	width: 120px;
+}
+
+.mainContentRightTd{
+	width: 83%;
+}
+.mainContentLeftTd{
+	width: 17%;
+}
+
+#boot{
+	background-image: url(../Images/bootBg.jpg);
+	background-repeat: repeat-x;
+	height: 35px;
+	line-height: 35px;
+	color: #333333;
+	text-align: center;
+	font-size: 12px;
+}
+.msg,.errorMsg{
+	line-height: 24px;
+	height: 24px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #D7D7D7;
+	border-right-color: #D7D7D7;
+	border-left-color: #D7D7D7;
+	display: block;
+	background-color: #FFFFCC;
+	font-weight: bolder;
+	color: #000000;
+	text-align: center;
+}
+.errorMsg{
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+.errorMsg a{
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.errorMsg a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+.gv{
+	border: 1px solid #D7D7D7;
+}
+.gvHeader{
+	color: #3F6293;
+	background-color: #F7F7F7;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-weight: normal;
+	font-variant: normal;
+}
+.gvHeader th{
+	font-weight: normal;
+	font-variant: normal;
+}
+.gvRow,.gvAlternatingRow,.gvEditRow{
+	line-height: 20px;
+	text-align: center;
+	padding: 2px;
+	height: 20px;
+}
+.gvAlternatingRow{
+	background-color: #F5FBFF;
+}
+.gvEditRow{
+	background-color: #FAF9DD;
+}
+.gvEditRow input{
+	background-color: #FFFFFF;
+	width: 80px;
+}
+.gvEditRow .gvOrderId input,.gvEditRow .gvOrderId{
+	width: 30px;
+}
+.gvEditRow .checkBox input,.gvEditRow .checkBox{
+	width: auto;
+}
+.gvCommandField{
+	text-align: center;
+	width: 130px;
+}
+
+.gvLeftField{
+	text-align: left;
+	padding-left: 10px;
+}
+.gvBtAField{
+	text-align: center;
+	width: 130px;
+}
+.gvCommandField input{
+	background-image: url(../Images/gvCommandFieldABg.jpg);
+	background-repeat: no-repeat;
+	line-height: 23px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 50px;
+	height:23px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: 10px;
+}
+.gvPage{
+	padding-left: 15px;
+	font-size: 18px;
+	color: #333333;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+.gvPage a{
+	display: block;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	border: 1px solid #FFFFFF;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+}
+.gvPage a:hover{
+	display: block;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+}
+.radio,.radio input,.checkBox,.checkBox input{
+	background-color:transparent;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.fLeft{
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+.show{
+
+}
+.hide{
+	display: none;
+}

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="UC" Namespace="ActionlessForm" Assembly="ActionlessForm" %>
+<%@ Register Src="~/Controls/MemberLogin.ascx" TagPrefix="UC" TagName="MemberLogin" %>
+<%@ Register Src="~/Controls/VoteModule.ascx" TagPrefix="UC" TagName="VoteModule" %>
+<%@ Register Src="~/Controls/WebSiteSearch.ascx" TagPrefix="UC" TagName="WebSiteSearch" %>
+<%@ Register Src="~/Controls/Search.ascx" TagPrefix="UC" TagName="Search" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Page.DataBind();
+    }
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="description" content="<%# WangQi.ERP.Web.BasePage.GetWebDescription() %>" />
+	<meta name="keywords" content="<%# WangQi.ERP.Web.BasePage.GetWebKeyWords() %>" />
+	<meta name="author" content="<%# WangQi.ERP.WebsiteData.Website.GetHtmlValue("WebsiteName") %>" />
+	<link rel="stylesheet" type="text/css" href="style/default.css" />
+    <script language="JavaScript" type="text/javascript" src="/js/System.js"></script>
+</head>
+<body>
+    <UC:form id="form1" runat="server">
+<div class="twidth">
+    <div id="headtop">
+        <div class="l">北京时间：
+            <script type="text/javascript" src="/js/SystemTime.js" charset="gb2312"> </script>
+            <span id="time" YearMonth="true" YMFormate="-" week="true" hour="true" SiteLanguage=<%=WangQi.ERP.WebsiteData.Website.GetLanguage()%>></span>
+            <script type="text/javascript"> showtime();</script>
+        </div>
+        <div class="r"> <%=WangQi.ERP.Web.BasePage.GetTopUserOfCompany()%> <a href="/websearch.aspx">站内搜索</a> | <a href="/sitemap.aspx">网站地图</a> | <%=WangQi.ERP.Web.BasePage.GetLanguageMenu() %>
+            <script language ="javascript" type="text/javascript" src="/js/language.js" charset="gb2312"></script>
+        </div>
+    </div>
+    <div id="header">
+        <div class="topAd"> <%=WangQi.ERP.Web.BasePage.GetAdContent("2")%> </div>
+        <div id="logo"><%=WangQi.ERP.Web.BasePage.GetWebSiteLogo() %></div>
+    </div>
+    <div id="nav">
+        <div class="l"></div>
+        <div class="r"></div>
+        <div class="m"> <%=WangQi.ERP.Web.BasePage.GetMenu("main") %> </div>
+    </div>
+    <div class="height7"></div>
+    <div id="middle">
+        <div id="sidebar">
+            <asp:contentplaceholder id="Side" runat="server" />
+            <div class="lframe">
+                <div class="tm"> <span class="tt">网站动态</span> </div>
+                <div class="mm"> <%=WangQi.ERP.Web.BasePage.GetArticleModule(31, 7, 10, false, false,true, "yy-MM-dd")%> </div>
+                <div class="bm"></div>
+            </div>
+        </div>
+    <div id="mainContent">
+        <asp:contentplaceholder id="MainContent" runat="server" />
+    </div>
+</div>
+<div id="footer"> <%=WangQi.ERP.Web.BasePage.GetMenu("bottom")%> <%=WangQi.ERP.Web.BasePage.GetWebsiteInfo("CopyRight")%> </div>
+</div>
+    </UC:form>
+</body>
+</html>
